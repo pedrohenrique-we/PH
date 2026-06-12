@@ -1,1 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroComércio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>AgroComércio</h1>
+        <nav>
+            <ul>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <section id="hero">
+        <h2>Comércio de produtos agropecuários de qualidade</h2>
+        <p>Conectando produtores e compradores de forma simples e eficiente.</p>
+        <button id="verProdutos">Ver Produtos</button>
+    </section>
+
+    <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="produto" data-nome="Sementes de Milho" data-preco="50">
+            <h3>Sementes de Milho</h3>
+            <p>Preço: R$50,00</p>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="produto" data-nome="Rações" data-preco="100">
+            <h3>Rações</h3>
+            <p>Preço: R$100,00</p>
+            <button class="comprar">Comprar</button>
+        </div>
+        <div class="produto" data-nome="Fertilizantes" data-preco="80">
+            <h3>Fertilizantes</h3>
+            <p>Preço: R$80,00</p>
+            <button class="comprar">Comprar</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa dedicada ao comércio de produtos agropecuários, fornecendo qualidade e confiança para produtores e compradores em todo o país.</p>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <form id="formContato">
+            <input type="text" placeholder="Seu nome" required>
+            <input type="email" placeholder="Seu e-mail" required>
+            <textarea placeholder="Sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 AgroComércio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
