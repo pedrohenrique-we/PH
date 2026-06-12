@@ -3,65 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroComércio</title>
+    <title>AgroComércio - Soluções Agrotech</title>
+
+    <!-- Fonte Moderna -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
+
+    <!-- ================= HEADER / HERO ================= -->
     <header>
-        <h1>AgroComércio</h1>
+        <div class="logo">Agro<span class="highlight">Tech</span></div>
         <nav>
             <ul>
+                <li><a href="#hero">Home</a></li>
                 <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#diferenciais">Diferenciais</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <section id="hero">
-        <h2>Comércio de produtos agropecuários de qualidade</h2>
-        <p>Conectando produtores e compradores de forma simples e eficiente.</p>
-        <button id="verProdutos">Ver Produtos</button>
+        <div class="hero-content">
+            <h1>Soluções para sua <span class="typing" data-words='["Lavoura","Produção","Fazenda"]'></span></h1>
+            <p>Conectando produtores e compradores com tecnologia e confiança.</p>
+            <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+        </div>
     </section>
 
+    <!-- ================= PRODUTOS ================= -->
     <section id="produtos">
-        <h2>Nossos Produtos</h2>
-        <div class="produto" data-nome="Sementes de Milho" data-preco="50">
-            <h3>Sementes de Milho</h3>
-            <p>Preço: R$50,00</p>
-            <button class="comprar">Comprar</button>
-        </div>
-        <div class="produto" data-nome="Rações" data-preco="100">
-            <h3>Rações</h3>
-            <p>Preço: R$100,00</p>
-            <button class="comprar">Comprar</button>
-        </div>
-        <div class="produto" data-nome="Fertilizantes" data-preco="80">
-            <h3>Fertilizantes</h3>
-            <p>Preço: R$80,00</p>
-            <button class="comprar">Comprar</button>
+        <h2 class="section-title">Nossos Produtos</h2>
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Sementes de Milho</h3>
+                <p>Alta germinação e produtividade garantida.</p>
+                <span class="price">R$50,00</span>
+                <button class="btn btn-secondary">Comprar</button>
+            </div>
+
+            <div class="card">
+                <h3>Rações Premium</h3>
+                <p>Nutrição completa para seu rebanho.</p>
+                <span class="price">R$120,00</span>
+                <button class="btn btn-secondary">Comprar</button>
+            </div>
+
+            <div class="card">
+                <h3>Fertilizantes</h3>
+                <p>Mais produtividade e sustentabilidade no campo.</p>
+                <span class="price">R$80,00</span>
+                <button class="btn btn-secondary">Comprar</button>
+            </div>
+
         </div>
     </section>
 
-    <section id="sobre">
-        <h2>Sobre Nós</h2>
-        <p>Somos uma empresa dedicada ao comércio de produtos agropecuários, fornecendo qualidade e confiança para produtores e compradores em todo o país.</p>
+    <!-- ================= DIFERENCIAIS ================= -->
+    <section id="diferenciais">
+        <h2 class="section-title">Por que escolher a AgroTech?</h2>
+        <div class="cards-container">
+
+            <div class="card">
+                <h3>Entrega Rápida</h3>
+                <p>Logística eficiente para todas as regiões.</p>
+            </div>
+
+            <div class="card">
+                <h3>Suporte Especializado</h3>
+                <p>Equipe pronta para orientar produtores e clientes.</p>
+            </div>
+
+            <div class="card">
+                <h3>Qualidade Garantida</h3>
+                <p>Produtos testados e certificados para maior confiança.</p>
+            </div>
+
+        </div>
     </section>
 
+    <!-- ================= CONTATO ================= -->
     <section id="contato">
-        <h2>Contato</h2>
+        <h2 class="section-title">Fale Conosco</h2>
         <form id="formContato">
-            <input type="text" placeholder="Seu nome" required>
-            <input type="email" placeholder="Seu e-mail" required>
-            <textarea placeholder="Sua mensagem" required></textarea>
-            <button type="submit">Enviar</button>
+            <input type="text" placeholder="Seu Nome" required>
+            <input type="email" placeholder="Seu Email" required>
+            <textarea placeholder="Sua Mensagem" required></textarea>
+            <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
     </section>
 
+    <!-- ================= WHATSAPP FLOAT BUTTON ================= -->
+    <a href="https://wa.me/5511999999999?text=Olá,%20tenho%20interesse%20nos%20produtos" 
+       class="whatsapp-btn" target="_blank">
+        💬
+    </a>
+
+    <!-- ================= FOOTER ================= -->
     <footer>
-        <p>&copy; 2026 AgroComércio. Todos os direitos reservados.</p>
+        <p>&copy; 2026 AgroTech. Todos os direitos reservados.</p>
     </footer>
 
+    <!-- JS -->
     <script src="script.js"></script>
 </body>
 </html>
